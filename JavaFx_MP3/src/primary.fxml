@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="372.0" style="-fx-background-color: #927FFD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Pane fx:id="header" prefHeight="62.0" prefWidth="372.0" style="-fx-background-color: #B6DD50;">
+         <children>
+            <Text fill="WHITE" layoutX="152.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mucify*">
+               <font>
+                  <Font name="Poppins Black" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fx:id="image" fitHeight="168.0" fitWidth="200.0" layoutX="102.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/headphone-4035933-3342612@0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="328.0" text="Now Playing :  " textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="songLabel" layoutX="134.0" layoutY="328.0" prefHeight="19.0" prefWidth="224.0" text="Song-By" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="13.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutX="18.0" layoutY="367.0" prefHeight="12.0" prefWidth="336.0" progress="0.0" />
+      <Button fx:id="playButton" layoutX="72.0" layoutY="419.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #B6DD50;" text="Play" textFill="#583df2" />
+      <Button fx:id="pauseButton" layoutX="217.0" layoutY="419.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #B6DD50;" text="Pause" textFill="#583df2" />
+      <Button fx:id="previousButton" layoutX="72.0" layoutY="491.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;" text="Previous" textFill="#583df2" />
+      <Button fx:id="nextButton" layoutX="217.0" layoutY="491.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;" text="Next" textFill="#583df2" />
+   </children>
+</AnchorPane>
